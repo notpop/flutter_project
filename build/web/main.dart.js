@@ -4213,7 +4213,7 @@ q=P.u(s,t.j1)
 p=document.createElement("form")
 p.noValidate=!0
 p.method="post"
-p.action="#"
+p.action=""
 C.fB.fD(p,"submit",new H.Jj())
 H.Ga(p,!1)
 o=J.Lf(0,s)
