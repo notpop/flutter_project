@@ -107,7 +107,7 @@ self.addEventListener("fetch", (event) => {
   if (key.indexOf('?v=') != -1) {
     key = key.split('?v=')[0];
   }
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
+  if (event.request.url == origin || event.request.url.startsWith(origin) || key == '') {
     key = '/';
   }
   // If the URL is not the RESOURCE list then return to signal that the
