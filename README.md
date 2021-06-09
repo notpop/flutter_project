@@ -1,16 +1,8 @@
-# tutorial
+ロリポップ（レンタルサーバー）を契約してドメイン取ったので
+実際にそこに何か置いてみたいなと思い適当にフラッターのチュートリアル載せました。
 
-A new Flutter project.
+http://webnever.com/
 
-## Getting Started
+あと使ったことなかったけどgithub actionsも使って自動デプロイできるようにしました。
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+そもそもm1 macbook proを購入し開発環境を作るついでなので色々適当です。
