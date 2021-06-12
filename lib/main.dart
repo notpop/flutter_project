@@ -47,8 +47,6 @@ class _MyHomePageState extends State<MyHomePage> {
           " !\nLet's play a game with me.\n",
       "url": "https://webnever.com/" + "\n",
       "hashtags": "webnever",
-      "via": "",
-      "related": "",
     };
 
     final Uri tweetScheme =
