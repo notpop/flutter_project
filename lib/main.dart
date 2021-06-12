@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final Map<String, dynamic> tweetQuery = {
       "text": "My best tap count is " +
           _counter.toString() +
-          " !\n Let's play a game with me.\n",
+          " !\nLet's play a game with me.\n",
       "url": "https://webnever.com/" + "\n",
       "hashtags": "webnever",
       "via": "",
