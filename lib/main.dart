@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             SizedBox(
               height: 140,
-              child: const Text('Tap!! Tap!! Tap!! Tap!! Tap!! Tap!!',
+              child: const Text('Tap! Tap! Tap!',
                   style: TextStyle(
                     fontSize: 50,
                   )),
