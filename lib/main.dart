@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   setUrlStrategy(PathUrlStrategy());
@@ -40,12 +40,26 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void _countShare() {
-    Share.share("My best tap count is" +
-        _counter.toString() +
-        "!\n Let's play a game with me.\n" +
-        "https://webnever.com/" +
-        "\n#webnever");
+  void _tweet() async {
+    final Map<String, dynamic> tweetQuery = {
+      "text": "My best tap count is " +
+          _counter.toString() +
+          " !\n Let's play a game with me.\n",
+      "url": "https://webnever.com/" + "\n",
+      "hashtags": "webnever",
+      "via": "",
+      "related": "",
+    };
+
+    final Uri tweetScheme =
+        Uri(scheme: "twitter", host: "post", queryParameters: tweetQuery);
+
+    final Uri tweetIntentUrl =
+        Uri.https("twitter.com", "/intent/tweet", tweetQuery);
+
+    await canLaunch(tweetScheme.toString())
+        ? await launch(tweetScheme.toString())
+        : await launch(tweetIntentUrl.toString());
   }
 
   @override
@@ -58,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('webnever.com'),
         actions: <Widget>[
           IconButton(
-            onPressed: _countShare,
+            onPressed: _tweet,
             icon: const Icon(
               Icons.share,
               color: Colors.white,
