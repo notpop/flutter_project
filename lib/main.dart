@@ -46,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
           _counter.toString() +
           " !\nLet's play a game with me.\n",
       "url": "https://webnever.com/" + "\n",
-      "hashtags": "webnever",
+      "hashtags": "webnever\n",
+      "via": "webnever_com",
     };
 
     final Uri tweetScheme =

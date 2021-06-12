@@ -45452,7 +45452,7 @@ F.t9.prototype={
 LR:function(){this.aO(new F.UN(this))},
 iC:function(){var s=0,r=P.a6(t.z),q=this,p,o,n
 var $async$iC=P.a0(function(a,b){if(a===1)return P.a3(b,r)
-while(true)switch(s){case 0:p=P.aA(["text","My best tap count is "+C.h.h(q.d)+" !\nLet's play a game with me.\n","url","https://webnever.com/\n","hashtags","webnever","via","","related",""],t.N,t.z)
+while(true)switch(s){case 0:p=P.aA(["text","My best tap count is "+C.h.h(q.d)+" !\nLet's play a game with me.\n","url","https://webnever.com/\n","hashtags","webnever\n","via","webnever_com"],t.N,t.z)
 o=P.a_f("post",null,null,null,p,"twitter",null)
 n=P.adO("https","twitter.com","/intent/tweet",p)
 s=5
