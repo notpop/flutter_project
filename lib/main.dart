@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:share/share.dart';
 
 void main() {
   setUrlStrategy(PathUrlStrategy());
@@ -39,29 +40,75 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _countShare() {
+    Share.share("My best tap count is" +
+        _counter.toString() +
+        "!\n Let's play a game with me.\n" +
+        "https://webnever.com/" +
+        "\n#webnever");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        centerTitle: false,
+        titleSpacing: 20.0,
+        title: const Text('webnever.com'),
+        actions: <Widget>[
+          IconButton(
+            onPressed: _countShare,
+            icon: const Icon(
+              Icons.share,
+              color: Colors.white,
+            ),
+          ),
+        ],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            SizedBox(
+              height: 140,
+              child: const Text('Tap!! Tap!! Tap!! Tap!! Tap!! Tap!!',
+                  style: TextStyle(
+                    fontSize: 50,
+                  )),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Container(
+              height: 20,
+            ),
+            SizedBox(
+              height: 160,
+              child: Text(
+                '$_counter',
+                style: TextStyle(
+                  fontSize: 120,
+                ),
+              ),
+            ),
+            Container(
+              height: 160,
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        backgroundColor: Colors.green,
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: SizedBox(
+        width: 120,
+        height: 120,
+        child: FloatingActionButton(
+          onPressed: _incrementCounter,
+          tooltip: 'Increment',
+          backgroundColor: Colors.green,
+          child: const Icon(
+            Icons.add,
+            size: 120,
+          ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

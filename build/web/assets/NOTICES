@@ -4879,6 +4879,7 @@ fake_async
    limitations under the License.
 --------------------------------------------------------------------------------
 collection
+mime
 stream_channel
 typed_data
 
@@ -5761,6 +5762,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------------------
 flutter_lints
+share
 
 Copyright 2013 The Flutter Authors. All rights reserved.
 
