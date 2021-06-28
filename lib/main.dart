@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'webveber | 田舎の生産性を上げて都会に嫉妬させる！',
+      title: 'webnever | 田舎の生産性を上げて都会に嫉妬させる！',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
