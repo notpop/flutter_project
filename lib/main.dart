@@ -10,11 +10,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'webveber',
+      title: 'webveber | 田舎の生産性を上げて都会に嫉妬させる！',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
